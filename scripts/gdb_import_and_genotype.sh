@@ -1,0 +1,148 @@
+#!/bin/bash
+#SBATCH --job-name=wgs_genomicsdb
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=64G
+#SBATCH --time=96:00:00
+#SBATCH --output=../logs/genomicsdb_%j.log
+#SBATCH --error=../logs/genomicsdb_%j.err
+
+BB_WORKDIR=$(mktemp -d /scratch/${USER}_${SLURM_JOBID}.XXXXXX)
+export TMPDIR=${BB_WORKDIR}
+
+module purge
+module load bear-apps/2022b/live
+module load GATK/4.4.0.0-GCCcore-12.2.0-Java-17
+
+gatk GenomicsDBImport \
+   --genomicsdb-workspace-path ${TMPDIR}/gvcf_db \
+   --batch-size 50 \
+   -L intervals.list \
+   --variant ../data/vcf/gvcfs/S0208_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S0209_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S0394_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S0560_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S0561_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S0562_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S0563_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S0567_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1008_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1009_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1010_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1011_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1012_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1013_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1014_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1015_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1016_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1017_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1018_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1019_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1020_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1021_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1022_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1023_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1024_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1025_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1026_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1027_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1028_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1029_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1030_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1031_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1032_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1033_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1034_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1035_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1237_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1238_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1239_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1240_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1241_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1242_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1243_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1244_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1245_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1246_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1247_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1248_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1249_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1250_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1251_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1252_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1253_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1254_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1255_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1256_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1257_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1258_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1259_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1260_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1608_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1853_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1854_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1855_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1856_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1857_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1858_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1859_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1860_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1861_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S1862_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2275_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2276_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2277_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2278_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2279_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2310_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2311_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2312_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2313_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2314_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2315_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2316_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2317_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2339_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2373_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2374_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2375_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2376_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2377_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2378_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2383_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2384_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2385_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2386_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2387_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2444_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2445_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2446_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2447_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2448_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2449_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2450_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2451_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2452_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2453_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2454_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2455_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2456_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2457_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2458_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2483_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2484_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2514_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2515_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2516_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2517_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2518_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2519_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2520_sorted_rg.g.vcf.gz \
+   --variant ../data/vcf/gvcfs/S2521_sorted_rg.g.vcf.gz \
+
+gatk GenotypeGVCFs \
+   -R ../data/reference/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna \
+   -V gendb://${TMPDIR}/gvcf_db \
+   -O ../data/vcf/combined.g.vcf.gz
+
+test -d ${BB_WORKDIR} && /bin/rm -rf ${BB_WORKDIR}
