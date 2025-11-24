@@ -12,7 +12,7 @@ module load bear-apps/2023a/live
 module load FastQC/0.11.9-Java-11
 
 # Input and output directories
-INPUT_DIR="/rds/projects/s/sharmaoa-gpcr/Liam/data/merged_fastq"
+INPUT_DIR="/rds/projects/s/sharmaoa-gpcr/Liam/data/trimmed"
 OUTPUT_DIR="/rds/projects/s/sharmaoa-gpcr/Liam/data/qc2"
 
 # Create output directory if it doesn't exist

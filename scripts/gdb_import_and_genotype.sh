@@ -143,6 +143,6 @@ gatk GenomicsDBImport \
 gatk GenotypeGVCFs \
    -R ../data/reference/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna \
    -V gendb://${TMPDIR}/gvcf_db \
-   -O ../data/vcf/combined.g.vcf.gz
+   -O ../data/vcf/s_combined.vcf.gz
 
 test -d ${BB_WORKDIR} && /bin/rm -rf ${BB_WORKDIR}

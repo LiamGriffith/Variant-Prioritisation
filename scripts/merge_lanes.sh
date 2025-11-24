@@ -13,8 +13,8 @@ module purge
 module load bear-apps/2024a/live
 
 # Input/output directories
-INDIR="/rds/projects/s/sharmaoa-gpcr/Liam/data/raw"
-OUTDIR="/rds/projects/s/sharmaoa-gpcr/Liam/data/merged_fastq2"
+INDIR="/rds/projects/s/sharmaoa-gpcr/Liam/data/raw_files"
+OUTDIR="/rds/projects/s/sharmaoa-gpcr/Liam/data/merged_fastq"
 mkdir -p "$OUTDIR"
 
 # Loop through unique sample IDs
