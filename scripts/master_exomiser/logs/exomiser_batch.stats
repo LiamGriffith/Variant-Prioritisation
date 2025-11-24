@@ -1,0 +1,221 @@
++--------------------------------------------------------------------------+
+| Job on the BlueBEAR cluster:
+| Starting at Thu Nov 20 16:02:40 2025 for lcg159(823271)
+| Identity jobid 31819236 jobname exomiser_batch
+| Running against project sharmaoa-gpcr and in partition icelake-shared
+| Requested cpu=4,mem=144G,node=1,billing=4 - 1-00:00:00 walltime
+| Allocated cpu=4,mem=144G,node=1,billing=4
+| Assigned to nodes bear-pg0207u18a
+| Command /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser/master_exomiser.sh
+| WorkDir /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Finished at Thu Nov 20 16:02:51 2025 for lcg159(823271) on the BlueBEAR Cluster
+| Required (00:05.136 cputime, 754K memory used) - 00:00:11 walltime
+| JobState COMPLETING - Reason NonZeroExitCode
+| Exitcode 1:0
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Job on the BlueBEAR cluster:
+| Starting at Thu Nov 20 16:12:57 2025 for lcg159(823271)
+| Identity jobid 31819639 jobname exomiser_batch
+| Running against project sharmaoa-gpcr and in partition icelake-shared
+| Requested cpu=4,mem=144G,node=1,billing=4 - 1-00:00:00 walltime
+| Allocated cpu=4,mem=144G,node=1,billing=4
+| Assigned to nodes bear-pg0203u05a
+| Command /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser/master_exomiser.sh
+| WorkDir /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Finished at Thu Nov 20 16:14:08 2025 for lcg159(823271) on the BlueBEAR Cluster
+| Required (00:23.590 cputime, 543020K memory used) - 00:01:10 walltime
+| JobState COMPLETING - Reason NonZeroExitCode
+| Exitcode 1:0
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Job on the BlueBEAR cluster:
+| Starting at Thu Nov 20 16:15:30 2025 for lcg159(823271)
+| Identity jobid 31819789 jobname exomiser_batch
+| Running against project sharmaoa-gpcr and in partition icelake-shared
+| Requested cpu=4,mem=144G,node=1,billing=4 - 1-00:00:00 walltime
+| Allocated cpu=4,mem=144G,node=1,billing=4
+| Assigned to nodes bear-pg0207u25b
+| Command /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser/master_exomiser.sh
+| WorkDir /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Finished at Thu Nov 20 16:15:58 2025 for lcg159(823271) on the BlueBEAR Cluster
+| Required (00:21.027 cputime, 710K memory used) - 00:00:28 walltime
+| JobState COMPLETING - Reason NonZeroExitCode
+| Exitcode 1:0
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Job on the BlueBEAR cluster:
+| Starting at Thu Nov 20 16:22:08 2025 for lcg159(823271)
+| Identity jobid 31820130 jobname exomiser_batch
+| Running against project sharmaoa-gpcr and in partition icelake-shared
+| Requested cpu=4,mem=144G,node=1,billing=4 - 1-00:00:00 walltime
+| Allocated cpu=4,mem=144G,node=1,billing=4
+| Assigned to nodes bear-pg0207u25b
+| Command /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser/master_exomiser.sh
+| WorkDir /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Finished at Thu Nov 20 16:23:03 2025 for lcg159(823271) on the BlueBEAR Cluster
+| Required (00:19.066 cputime, 2045426K memory used) - 00:00:55 walltime
+| JobState COMPLETING - Reason NonZeroExitCode
+| Exitcode 1:0
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Job on the BlueBEAR cluster:
+| Starting at Thu Nov 20 16:24:53 2025 for lcg159(823271)
+| Identity jobid 31820201 jobname exomiser_batch
+| Running against project sharmaoa-gpcr and in partition icelake-shared
+| Requested cpu=4,mem=144G,node=1,billing=4 - 1-00:00:00 walltime
+| Allocated cpu=4,mem=144G,node=1,billing=4
+| Assigned to nodes bear-pg0207u26b
+| Command /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser/master_exomiser.sh
+| WorkDir /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Finished at Thu Nov 20 16:52:39 2025 for lcg159(823271) on the BlueBEAR Cluster
+| Required (28:45.479 cputime, 7480328K memory used) - 00:27:46 walltime
+| JobState COMPLETING - Reason NonZeroExitCode
+| Exitcode 1:0
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Job on the BlueBEAR cluster:
+| Starting at Fri Nov 21 09:24:57 2025 for lcg159(823271)
+| Identity jobid 31840146 jobname exomiser_batch
+| Running against project sharmaoa-gpcr and in partition emerald-shared
+| Requested cpu=4,mem=144G,node=1,billing=4 - 1-00:00:00 walltime
+| Allocated cpu=4,mem=144G,node=1,billing=4
+| Assigned to nodes bear-pg0201u07a
+| Command /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser/master_exomiser.sh
+| WorkDir /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Finished at Fri Nov 21 09:44:55 2025 for lcg159(823271) on the BlueBEAR Cluster
+| Required (22:50.723 cputime, 7507127K memory used) - 00:19:58 walltime
+| JobState COMPLETING - Reason NonZeroExitCode
+| Exitcode 1:0
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Job on the BlueBEAR cluster:
+| Starting at Fri Nov 21 10:32:38 2025 for lcg159(823271)
+| Identity jobid 31841042 jobname exomiser_batch
+| Running against project sharmaoa-gpcr and in partition sapphire-shared
+| Requested cpu=4,mem=144G,node=1,billing=4 - 1-00:00:00 walltime
+| Allocated cpu=4,mem=144G,node=1,billing=4
+| Assigned to nodes bear-pg0210u17a
+| Command /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser/master_exomiser.sh
+| WorkDir /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Finished at Fri Nov 21 12:29:54 2025 for lcg159(823271) on the BlueBEAR Cluster
+| Required (02:25:16 cputime, 8472575K memory used) - 01:57:16 walltime
+| JobState COMPLETING - Reason NonZeroExitCode
+| Exitcode 1:0
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Job on the BlueBEAR cluster:
+| Starting at Fri Nov 21 13:50:29 2025 for lcg159(823271)
+| Identity jobid 31847566 jobname exomiser_batch
+| Running against project sharmaoa-gpcr and in partition icelake-shared
+| Requested cpu=4,mem=144G,node=1,billing=4 - 1-00:00:00 walltime
+| Allocated cpu=4,mem=144G,node=1,billing=4
+| Assigned to nodes bear-pg0104u27a
+| Command /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser/master_exomiser.sh
+| WorkDir /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Finished at Fri Nov 21 14:31:07 2025 for lcg159(823271) on the BlueBEAR Cluster
+| Required (49:00.885 cputime, 9763920K memory used) - 00:40:43 walltime
+| JobState COMPLETING - Reason NonZeroExitCode
+| Exitcode 1:0
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Job on the BlueBEAR cluster:
+| Starting at Fri Nov 21 14:40:10 2025 for lcg159(823271)
+| Identity jobid 31851094 jobname exomiser_batch
+| Running against project sharmaoa-gpcr and in partition emerald-shared
+| Requested cpu=4,mem=144G,node=1,billing=4 - 1-00:00:00 walltime
+| Allocated cpu=4,mem=144G,node=1,billing=4
+| Assigned to nodes bear-pg0201u10a
+| Command /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser/master_exomiser.sh
+| WorkDir /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Finished at Fri Nov 21 14:40:51 2025 for lcg159(823271) on the BlueBEAR Cluster
+| Required (00:16.821 cputime, 731765K memory used) - 00:00:44 walltime
+| JobState COMPLETING - Reason NonZeroExitCode
+| Exitcode 1:0
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Job on the BlueBEAR cluster:
+| Starting at Fri Nov 21 14:45:55 2025 for lcg159(823271)
+| Identity jobid 31851568 jobname exomiser_batch
+| Running against project sharmaoa-gpcr and in partition sapphire-shared
+| Requested cpu=4,mem=144G,node=1,billing=4 - 1-00:00:00 walltime
+| Allocated cpu=4,mem=144G,node=1,billing=4
+| Assigned to nodes bear-pg0210u40a
+| Command /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser/master_exomiser.sh
+| WorkDir /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Finished at Fri Nov 21 14:48:49 2025 for lcg159(823271) on the BlueBEAR Cluster
+| Required (02:42.639 cputime, 7708904K memory used) - 00:02:53 walltime
+| JobState COMPLETING - Reason NonZeroExitCode
+| Exitcode 1:0
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Job on the BlueBEAR cluster:
+| Starting at Fri Nov 21 14:50:21 2025 for lcg159(823271)
+| Identity jobid 31851985 jobname exomiser_batch
+| Running against project sharmaoa-gpcr and in partition sapphire-shared
+| Requested cpu=4,mem=144G,node=1,billing=4 - 1-00:00:00 walltime
+| Allocated cpu=4,mem=144G,node=1,billing=4
+| Assigned to nodes bear-pg0210u40a
+| Command /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser/master_exomiser.sh
+| WorkDir /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Job on the BlueBEAR cluster:
+| Starting at Fri Nov 21 14:50:32 2025 for lcg159(823271)
+| Identity jobid 31851988 jobname exomiser_batch
+| Running against project sharmaoa-gpcr and in partition sapphire-shared
+| Requested cpu=4,mem=144G,node=1,billing=4 - 1-00:00:00 walltime
+| Allocated cpu=4,mem=144G,node=1,billing=4
+| Assigned to nodes bear-pg0202u14b
+| Command /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser/master_exomiser.sh
+| WorkDir /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Job on the BlueBEAR cluster:
+| Starting at Fri Nov 21 15:15:42 2025 for lcg159(823271)
+| Identity jobid 31852564 jobname exomiser_batch
+| Running against project sharmaoa-gpcr and in partition sapphire-shared
+| Requested cpu=4,mem=144G,node=1,billing=4 - 1-00:00:00 walltime
+| Allocated cpu=4,mem=144G,node=1,billing=4
+| Assigned to nodes bear-pg0210u31a
+| Command /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser/master_exomiser.sh
+| WorkDir /rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Finished at Fri Nov 21 15:15:54 2025 for lcg159(823271) on the BlueBEAR Cluster
+| Required (00:01.730 cputime, 826K memory used) - 00:00:12 walltime
+| JobState COMPLETING - Reason None
+| Exitcode 0:15
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Finished at Fri Nov 21 15:59:50 2025 for lcg159(823271) on the BlueBEAR Cluster
+| Required (01:26:35 cputime, 9840621K memory used) - 01:09:29 walltime
+| JobState COMPLETING - Reason None
+| Exitcode 0:0
++--------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+| Finished at Fri Nov 21 16:04:15 2025 for lcg159(823271) on the BlueBEAR Cluster
+| Required (01:34:05 cputime, 10520285K memory used) - 01:13:43 walltime
+| JobState COMPLETING - Reason None
+| Exitcode 0:0
++--------------------------------------------------------------------------+
