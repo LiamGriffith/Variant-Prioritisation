@@ -12,9 +12,9 @@ module load Java/17.0.15
 
 set -euo pipefail
 
-TSV="/rds/projects/s/sharmaoa-gpcr/Liam/scripts/master_exomiser/rerun_input.tsv"
-YAML_TEMPLATE="/rds/projects/s/sharmaoa-gpcr/Liam/exomiser/exomiser-cli-14.0.0/examples/template.yaml"
-OUTDIR="/rds/projects/s/sharmaoa-gpcr/Liam/exomiser/results"
+TSV="/rds/projects/s/sharmaoa-gpcr/Variant-Prioritisation/scripts/master_exomiser/exomiser_input_clean.tsv"
+YAML_TEMPLATE="/rds/projects/s/sharmaoa-gpcr/Variant-Prioritisation/scripts/master_exomiser/template.yaml"
+OUTDIR="/rds/projects/s/sharmaoa-gpcr/Variant-Prioritisation/exomiser/results"
 
 
 mkdir -p "$OUTDIR"
@@ -35,7 +35,7 @@ while IFS=$'\t' read -r SAMPLE HPO_RAW; do
 
     echo "Generated $YAML_OUT"
 
-    java -Xmx64G -jar /rds/projects/s/sharmaoa-gpcr/Liam/exomiser/exomiser-cli-14.0.0/exomiser-cli-14.0.0.jar \
+    java -Xmx64G -jar /rds/projects/s/sharmaoa-gpcr/Variant-Prioritisation/exomiser/exomiser-cli-14.0.0/exomiser-cli-14.0.0.jar \
      --analysis $YAML_OUT
 
     echo "Finished $SAMPLE"

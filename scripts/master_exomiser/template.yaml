@@ -1,8 +1,8 @@
-exomiser.data-directory: /rds/projects/s/sharmaoa-gpcr/Liam/exomiser/exomiser-cli-14.0.0/data
+exomiser.data-directory: /rds/projects/s/sharmaoa-gpcr/Variant-Prioritisation/exomiser/exomiser-cli-14.0.0/data
 
 analysis:
     genomeAssembly: hg38
-    vcf: /rds/projects/s/sharmaoa-gpcr/Liam/data/annotated/__SAMPLE___sorted_only.vcf.gz
+    vcf: /rds/projects/s/sharmaoa-gpcr/Variant-Prioritisation/data/annotated/__SAMPLE__.exomiser.vcf.gz
     ped:
     proband: __SAMPLE___sorted
     hpoIds: __HPO_TERMS__
@@ -58,6 +58,6 @@ analysis:
 outputOptions:
     outputContributingVariantsOnly: false
     numGenes: 0
-    outputDirectory: /rds/projects/s/sharmaoa-gpcr/Liam/exomiser/exomiser-cli-14.0.0/data/master_run/__SAMPLE___exomiser
+    outputDirectory: /rds/projects/s/sharmaoa-gpcr/Variant-Prioritisation/exomiser/exomiser-cli-14.0.0/data/master_run/__SAMPLE___exomiser
     outputFileName: __SAMPLE___exomiser
     outputFormats: [HTML, JSON, TSV_GENE, TSV_VARIANT, VCF]
