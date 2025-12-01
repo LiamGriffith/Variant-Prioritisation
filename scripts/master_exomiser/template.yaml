@@ -2,7 +2,7 @@ exomiser.data-directory: /rds/projects/s/sharmaoa-gpcr/Variant-Prioritisation/ex
 
 analysis:
     genomeAssembly: hg38
-    vcf: /rds/projects/s/sharmaoa-gpcr/Variant-Prioritisation/data/annotated/__SAMPLE__.exomiser.vcf.gz
+    vcf: /rds/projects/s/sharmaoa-gpcr/Variant-Prioritisation/data/vcf/__SAMPLE__.vcf.gz
     ped:
     proband: __SAMPLE___sorted
     hpoIds: __HPO_TERMS__
