@@ -10,7 +10,7 @@ module purge
 module load bear-apps/2023a/live
 module load picard/3.4.0-Java-17
 
-BAMDIR="/rds/projects/s/sharmaoa-gpcr/Variant-Prioritisation/data/W_Exomes/1_aligned"
+BAMDIR="/rds/projects/s/sharmaoa-gpcr/Variant-Prioritisation/data/W_Exomes/1.1_renamed"
 OUTDIR="/rds/projects/s/sharmaoa-gpcr/Variant-Prioritisation/data/W_Exomes/2_RGAdded"
 
 mkdir -p $OUTDIR
